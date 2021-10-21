@@ -10,6 +10,9 @@ services:
       - ./storage/bsc-rpc:/root/.ethereum
       - ./scripts:/scripts
       - ./config:/config
+    ports:
+      - "8545:8545"
+      - "8546:8546"
     command: ash /scripts/bsc-rpc.sh
 
   bsc-validator1:
