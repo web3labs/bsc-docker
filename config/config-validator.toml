@@ -13,6 +13,11 @@ EnablePreimageRecording = false
 EWASMInterpreter = ""
 EVMInterpreter = ""
 
+[Eth.Miner]
+GasFloor = 10000000
+GasCeil = 20000000
+GasPrice = 1000000000
+
 [Eth.Ethash]
 CacheDir = ""
 CachesInMem = 0
